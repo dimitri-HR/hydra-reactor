@@ -2,6 +2,7 @@ var app = angular.module('hydraApp', []);
 
 app.factory('User', function($http, $window, $location, $rootScope) {
 
+console.log('Factory run');
   var userData = $rootScope.userData;
 
   // POST request to create a new user
@@ -175,6 +176,8 @@ app.run(function ($http, $rootScope, $location) {
   // to populate data. Note: you cannot overwrite the userData variable itself or the controllers
   // will no longer be pointing to the same reference. That is why the 'value' property is used
   // to store the data. It is initialized to undefined and then overwritten when the user signs in.
+
+console.log('RUN run');
 
   var userData = {
     value: undefined

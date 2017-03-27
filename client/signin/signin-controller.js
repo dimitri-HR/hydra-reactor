@@ -1,7 +1,4 @@
-
-
-
-angular.module('signinModule', ['hydraApp']).controller('signinController', ['$scope', '$http', 'User', function($scope, $http, User) {
+angular.module('signinModule', []).controller('signinController', ['$scope', '$http', 'User', function($scope, $http, User) {
 
   $scope.email = '';
   // $scope.password = '';
